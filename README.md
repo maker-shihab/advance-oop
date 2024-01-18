@@ -1,5 +1,5 @@
 # Advance OOP
-
+```js
 // Encapsulation and Abstraction
 class Person {
   constructor(firstName, lastName) {
@@ -41,7 +41,7 @@ class Manager extends Employee {
   }
 }
 
-// Test
+// Test Output
 const person1 = new Person('Maker', 'Shihab');
 // Encapsulation and Abstraction Outpu
 console.log(person1.getDetails_access());
@@ -53,14 +53,13 @@ console.log(employee1.displayDetails());
 const manager1 = new Manager('Rejwanul', 'Kobir', 'M456', 'HR');
 // Polymorphism: Accessing overridden method Output
 console.log(manager1.displayDetails());
+```
 
-
-/*
-OutPut:
-PS G:\EUB\5th Semister\AdvanceOOp> node oop.js
-First name is: Maker, Last name is: Shihab
-Employee ID: E123, First name is: Monayem, Last name is: Islam
-Manager in HR department, Employee ID: M456, First name is: Rejwanul, Last name is: Kobir
-*/
-
-// Raverance: https://github.com/maker-shihab/advance-oop
+## OutPut:
+PS G:\EUB\5th Semister\AdvanceOOp> node oop.js </br>
+```
+  First name is: Maker, Last name is: Shihab </br>
+  Employee ID: E123, First name is: Monayem, Last name is: Islam </br>
+  Manager in HR department, Employee ID: M456, First name is: Rejwanul, Last name is: Kobir
+```
+// Reference: https://github.com/maker-shihab/advance-oop
