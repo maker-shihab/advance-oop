@@ -62,4 +62,4 @@ PS G:\EUB\5th Semister\AdvanceOOp> node oop.js </br>
   Employee ID: E123, First name is: Monayem, Last name is: Islam </br>
   Manager in HR department, Employee ID: M456, First name is: Rejwanul, Last name is: Kobir
 ```
-// Reference: https://github.com/maker-shihab/advance-oop
+* Reference: https://github.com/maker-shihab/advance-oop
