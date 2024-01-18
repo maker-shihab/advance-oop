@@ -1,4 +1,8 @@
 # Advance OOP
+
+### Recap of Basic OOP
+I have used basic Object-Oriented Programming (OOP) concepts to recapitulate OOP. I've employed classes and objects, showcasing Data Abstraction, Encapsulation, Inheritance, and Polymorphism. Below is a simple JavaScript code illustrating these fundamental concepts.
+
 ```js
 // Encapsulation and Abstraction
 class Person {
@@ -43,11 +47,11 @@ class Manager extends Employee {
 
 // Test Output
 const person1 = new Person('Maker', 'Shihab');
-// Encapsulation and Abstraction Outpu
+// Encapsulation and Abstraction Output
 console.log(person1.getDetails_access());
 
 const employee1 = new Employee('Monayem', 'Islam', 'E123');
-// Polymorphism: Accessing overridden method Outpu
+// Polymorphism: Accessing overridden method Output
 console.log(employee1.displayDetails());
 
 const manager1 = new Manager('Rejwanul', 'Kobir', 'M456', 'HR');
