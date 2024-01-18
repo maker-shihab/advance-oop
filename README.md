@@ -1,1 +1,66 @@
-# advance-oop
+# Advance OOP
+
+// Encapsulation and Abstraction
+class Person {
+  constructor(firstName, lastName) {
+    // Encapsulation: private properties
+    let _firstName = firstName;
+    let _lastName = lastName;
+
+    // abstract method
+    this.getDetails_access = function () {
+      return `First name is: ${_firstName}, Last name is: ${_lastName}`;
+    };
+  }
+}
+
+// Employee
+class Employee extends Person {
+  constructor(firstName, lastName, employeeId) {
+    super(firstName, lastName);
+    this.employeeId = employeeId;
+  }
+
+  // Polymorphism: method overriding
+  displayDetails() {
+    return `Employee ID: ${this.employeeId}, ${this.getDetails_access()}`;
+  }
+}
+
+// Manager
+class Manager extends Employee {
+  constructor(firstName, lastName, employeeId, department) {
+    super(firstName, lastName, employeeId);
+    this.department = department;
+  }
+
+  // Polymorphism: method overriding
+  displayDetails() {
+    const employeeDetails = super.displayDetails() || "";
+    return `Manager in ${this.department} department, ${employeeDetails}`;
+  }
+}
+
+// Test
+const person1 = new Person('Maker', 'Shihab');
+// Encapsulation and Abstraction Outpu
+console.log(person1.getDetails_access());
+
+const employee1 = new Employee('Monayem', 'Islam', 'E123');
+// Polymorphism: Accessing overridden method Outpu
+console.log(employee1.displayDetails());
+
+const manager1 = new Manager('Rejwanul', 'Kobir', 'M456', 'HR');
+// Polymorphism: Accessing overridden method Output
+console.log(manager1.displayDetails());
+
+
+/*
+OutPut:
+PS G:\EUB\5th Semister\AdvanceOOp> node oop.js
+First name is: Maker, Last name is: Shihab
+Employee ID: E123, First name is: Monayem, Last name is: Islam
+Manager in HR department, Employee ID: M456, First name is: Rejwanul, Last name is: Kobir
+*/
+
+// Raverance: https://github.com/maker-shihab/advance-oop
