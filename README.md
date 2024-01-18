@@ -60,10 +60,10 @@ console.log(manager1.displayDetails());
 ```
 
 ## OutPut:
-PS G:\EUB\5th Semister\AdvanceOOp> node oop.js </br>
+PS G:\EUB\5th Semister\AdvanceOOp> node oop.js 
 ```
-  First name is: Maker, Last name is: Shihab </br>
-  Employee ID: E123, First name is: Monayem, Last name is: Islam </br>
+  First name is: Maker, Last name is: Shihab 
+  Employee ID: E123, First name is: Monayem, Last name is: Islam 
   Manager in HR department, Employee ID: M456, First name is: Rejwanul, Last name is: Kobir
 ```
 * Reference: https://github.com/maker-shihab/advance-oop
